@@ -8,9 +8,9 @@
 }
 
 body{
-    background-image:url(pngtree-memphis-playful-abstract-portfolio-pink-picture-image_1347362.jpg);
+    background-image:url(/pngtree-memphis-playful-abstract-portfolio-pink-picture-image_1347362.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: 2000px;
 }
 
 .navbar{
@@ -157,66 +157,412 @@ h1{
     display: none;
 }
 
-@media screen and (min-width:0px) and (max-width:600px){
-    li:nth-of-type(5),li:nth-of-type(1){
+@media screen and (max-width:672px) {
+    li:nth-of-type(1),li:nth-of-type(5){
         display: none;
     }
     .navbar{
         display: flex;
         list-style: none;
-        margin: 60px 0px 0px 35px;
+        margin: 0;
         gap: 2.4em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
     }
-    h1{
-        font-size:2em;
-        margin: 35% 0px 0px 10px;
-        animation-play-state: paused;
+    
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: 0.3s ease-in all;
+        user-select: none;
     }
     img{
-        width: 200px;
-        height: 200px;
-        right: 12.4em;
-        bottom:16em;
+        border: 1px black solid;
         border-radius: 100%;
+        width: 190px;
+        height: 190px;
+        position: static;
     }
-
+    
+    h1{
+        font-size: 2.4em;
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 80px;
+        user-select: none;
+        animation: float 3s ease-in 1s infinite normal;
+        animation-play-state: paused;
+    }
     .icons{
         display: flex;
-        margin: 2em 0px 0px 10em;
         gap:2em;
+        margin: 1em 0em 0em 0em;
+        justify-content: center;
+        align-items: center;
     }
-
-    .new-cls:after,.new-cls-1:after,.new-cls-2:after{
-        display: none;
-    }
-
-    .circle{
-        display: block;
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        background-color:skyblue;
-        left:50%;
-        position: absolute;
-        top:130%;
-        transform: translate(-50%,-50%);
+    li:nth-of-type(1){
+        margin-right: 0px;
     }
     body{
         overflow: hidden;
+        position: relative;
     }
-    img{
-        position: static;
-        margin-top:auto;
+    .new-cls:after,.new-cls-1:after,.new-cls-2:after{
+        display: none;
     }
     .flex{
         display: flex;
-        margin-left: auto;
+        margin-top: 30%;
+        align-items: center;
+    }
+
+    .circle{
+        width:100%;
+        height:10em;
+        background-color: #48abe0;
+        border-radius: 10rem 10rem 0 0;
+        display: block;
+        position:fixed;
+        bottom: 0;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width:360px){
+    li{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:590px) and (max-width:672px){
+    img{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:400px){
+    h1{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:672px) and (max-width:990px){
+    li:nth-of-type(1),li:nth-of-type(5){
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        gap: 2.4em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.1em;
+        cursor: pointer;
+        transition: 0.3s ease-in all;
+        user-select: none;
+    }
+    img{
+        border: 1px black solid;
+        border-radius: 100%;
+        width: 230px;
+        height: 230px;
+        position: static;
+        margin-left: 12%;
+    }
+    
+    h1{
+        font-size: 2.6em;
+        margin: 0px 0px 0px 10px;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 80px;
+        user-select: none;
+        animation: float 3s ease-in 1s infinite normal;
+        animation-play-state: paused;
+    }
+    .icons{
+        display: flex;
+        gap:2em;
+        margin: 2em 0em 0em 0em;
+        justify-content: center;
+        align-items: center;
+    }
+    li:nth-of-type(1){
+        margin-right: 0px;
+    }
+    body{
+        overflow: hidden;
+        position: relative;
+    }
+    .new-cls:after,.new-cls-1:after,.new-cls-2:after{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        margin-top: 30%;
         align-items: center;
     }
 }
-  
-@media screen and (max-width:395px) {
+
+@media screen and (min-width:890px) and (max-width:990px){
+    li:nth-of-type(5){
+        display: block;
+    }
+    .nav-btn{
+        margin: 20% 0em 0em 0.3em;
+        padding: 10px 30px 10px 30px;
+    }
+}
+    
+@media screen and (min-width:990px) and (max-width:1400px){
+    li:nth-of-type(1),li:nth-of-type(5){
+        display: none;
+    }
     .navbar{
-      margin: 60px 0px 0px 15px;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        gap: 2.4em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.1em;
+        cursor: pointer;
+        transition: 0.3s ease-in all;
+        user-select: none;
+    }
+    img{
+        border: 1px black solid;
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        position: static;
+        margin-left: 12%;
+    }
+    
+    h1{
+        font-size: 3.5em;
+        margin: 0px 0px 0px 10px;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 80px;
+        user-select: none;
+        animation: float 3s ease-in 1s infinite normal;
+        animation-play-state: paused;
+    }
+    .icons{
+        display: flex;
+        gap:2em;
+        margin: 2em 0em 0em 0em;
+        justify-content: center;
+        align-items: center;
+    }
+    li:nth-of-type(1){
+        margin-right: 0px;
+    }
+    body{
+        overflow: hidden;
+        position: relative;
+    }
+    .new-cls:after,.new-cls-1:after,.new-cls-2:after{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        margin-top: 30%;
+        align-items: center;
+    }
+    li:nth-of-type(5){
+        display: block;
+    }
+    .nav-btn{
+        margin: 20% 0em 0em 0.3em;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+@media screen and (min-width:1150px) and (max-width:1400px){
+    img{
+        border: 1px black solid;
+        border-radius: 100%;
+        width: 400px;
+        height: 400px;
+        position: static;
+        margin-left: 12%;
+    }
+    .flex{
+        margin-top: 22%;
+    }
+
+    body{
+        background-size: 3000px;
+    }
+
+    li{
+        font-size:3em;
+    }
+    .icons{
+        gap:2.3em;
+        margin: 3em 0em 0em 0em;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .navbar{
+        display: flex;
+        list-style: none;
+        margin: 60px 0px 0px 220px;
+        gap: 2.4em;
+    }
+    
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: 0.3s ease-in all;
+        user-select: none;
+    }
+    
+    .nav-btn{
+        margin: 0px 0px 0px 200px;
+        padding: 15px 35px 15px 35px;
+        position: relative;
+        bottom:1em;
+        border: none;
+        border-radius: 6px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.8em;
+        transition: 0.8s all ease;
+        cursor: pointer;
+        border: 1.2px solid grey;
+        background-color: white;
+    }
+    
+    .nav-btn:hover{
+        transform: translateY(-6%);
+        background-color:beige;
+        box-shadow: grey 1px 5px 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        transition: 0.3s ease-in all;
+        cursor: pointer;
+    }
+    
+    li:nth-of-type(1){
+        margin-right: 200px;
+        font-size: 2.2em;
+        position: relative;
+        bottom:.15em;
+        right:1.5em;
+    }
+    
+    img{
+        position: absolute;
+        right: 10em;
+        bottom:10em;
+        border: 1px black solid;
+        border-radius: 100%;
+    }
+    
+    h1{
+        font-size: 4em;
+        margin: 210px 0px 0px 180px;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 80px;
+        user-select: none;
+        animation: float 3s ease-in 1s infinite normal;
+    }
+    
+    .icons{
+        display: flex;
+        margin: 18em 0px 0px 12em;
+        gap:2em;
+    }
+    
+    .icons i{
+        color: black;
+        cursor: pointer;
+        transition: 1s ease-in all;
+    }
+    
+    @keyframes float{
+        50%{
+          transform: translateY(-2%);
+        }
+        100%{
+            transform: translateY(0%);
+          }
+    }
+    
+    .new-cls:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0%;
+        opacity: 0;
+        top:90px;
+        left: 530px;
+        transition: 0.6s all ease-in;
+    }
+    
+    .new-cls:hover::after{
+        opacity: 1;
+        width: 5%;
+    }
+    
+    .new-cls-1:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0%;
+        opacity: 0;
+        top:90px;
+        left: 640px;
+        transition: 0.6s all ease-in;
+    }
+    
+    .new-cls-1:hover::after{
+        opacity: 1;
+        width: 7%;
+    }
+    
+    .new-cls-2:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0%;
+        opacity: 0;
+        top:90px;
+        left: 785px;
+        transition: 0.6s all ease-in;
+    }
+    
+    .new-cls-2:hover::after{
+        opacity: 1;
+        width: 7%;
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    body{
+        background-size: 4000px;
     }
 }
