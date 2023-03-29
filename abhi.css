@@ -221,7 +221,7 @@ h1{
 
     .circle{
         width:100%;
-        height:9.5em;
+        height:9.2em;
         background-color: #48abe0;
         border-radius: 10rem 10rem 0 0;
         display: block;
@@ -566,4 +566,7 @@ h1{
     body{
         background-size: 4000px;
     }
+}
+i{
+    z-index:2;
 }
