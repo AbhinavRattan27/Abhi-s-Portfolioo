@@ -83,7 +83,6 @@ h1{
 
 .icons{
     display: flex;
-    margin: 18em 0px 0px 12em;
     gap:2em;
     z-index:2;
 }
@@ -199,7 +198,6 @@ h1{
     .icons{
         display: flex;
         gap:2em;
-        margin: 1em 0em 0em 0em;
         justify-content: center;
         align-items: center;
     }
