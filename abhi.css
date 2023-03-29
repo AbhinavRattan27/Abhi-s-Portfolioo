@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image:url(/pngtree-memphis-playful-abstract-portfolio-pink-picture-image_1347362.jpg);
+    background-image:url(pngtree-memphis-playful-abstract-portfolio-pink-picture-image_1347362.jpg);
     background-repeat: no-repeat;
     background-size: 2000px;
 }
@@ -564,5 +564,11 @@ h1{
 
     body{
         background-size: 4000px;
+    }
+}
+
+@media screen and (min-width:0px){
+    .circle{
+        display: block!important;
     }
 }
